@@ -1,0 +1,82 @@
+# Test file for cracking pattern definition
+# test test test
+
+device	Generic-Default
+version	From Hiden Analytical, modified for WEST
+
+H-molecule	borane
+non-H-mass	10
+H-atoms	3
+peak	1
+intensity	1
+
+H-molecule	water
+non-H-mass	16
+H-atoms	2
+peak	1
+peak	0.29
+peak	0.18
+intensity	0.9
+
+H-molecule	methane
+non-H-mass	12
+H-atoms	4
+peak	1
+peak	0.858
+peak	0.156
+intensity	1.6
+
+H-molecule	ammonia
+non-H-mass	14
+H-atoms	3
+peak	1
+peak	0.8
+peak	0.075
+peak	0.2
+peak	0.05
+intensity	1.3
+
+H-clone	ammonia15
+source	ammonia
+non-H-mass	15
+
+H-molecule	hydrogen
+non-H-mass	0
+H-atoms	2
+peak	1
+peak	0.025
+intensity	0.44
+
+non-H-molecule	N2
+peak	28	1
+peak	14	0.072
+peak	29	0.008
+intensity	1
+
+non-H-molecule	O2
+peak	32	1
+peak	16	0.114
+peak	34	0.008
+intensity	0.96
+
+non-H-molecule	CO2
+peak	44	1
+peak	28	0.114
+peak	16	0.085
+intensity	0.74
+
+non-H-molecule	CO
+peak	28	1
+peak	16	0.045
+peak	14	0.009
+intensity	0.74
+
+non-H-molecule	Ar
+peak	40	1
+peak	20	0.107
+intensity	1.2
+
+non-H-molecule	Ne
+peak	20	1
+peak	22	0.099
+intensity	0.23

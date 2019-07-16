@@ -1,0 +1,99 @@
+# Definition of cracking patterns for rga_data_handling objects
+# File format: Nov 2018
+# Converted from direct entry
+device	HPQI
+version	October 2016, T. Reichbauer
+source	direct entry
+
+# Definitions of cracking patterns start here.
+
+# H-containing molecules are defined with:
+# molecule name, mass of the non-H atom(s)
+# intensities of the peaks
+# and relative intensity, compared to N2
+# i.e. the intensity of the main peak relative to 
+# intensity of N2 at the same pressure, at 28 AMU
+
+H-molecule	water
+non-H-mass	16
+H-atoms	2
+peak	1
+peak	0.3
+peak	0.1
+intensity	0.821
+
+H-molecule	hydrogen
+non-H-mass	0
+H-atoms	2
+peak	1
+peak	0.007
+intensity	0.427
+
+H-molecule	ammonia
+non-H-mass	14
+H-atoms	3
+peak	1
+peak	0.63
+peak	0.034
+intensity	0.93
+
+# H-molecule definitions can be cloned
+# in which case the source molecule must be specified
+# and the mass of the non-H part.
+# Peak definitions will be used as in the source molecule.
+
+H-clone	ammonia15
+non-H-mass	15
+source	ammonia
+
+H-molecule	methane
+non-H-mass	12
+H-atoms	4
+peak	1
+peak	0.826
+peak	0.109
+peak	0.050
+peak	0.016
+intensity	1.389
+
+# Non-H containing molecules are defined by:
+# Molecule name, peaks at fixed positions in AMU and
+# their respective intensities,
+# and the relative intensity.
+
+non-H-molecule	CO2
+peak	44	1
+peak	28	0.114
+peak	16	0.085
+intensity	1.4
+
+non-H-molecule	CO
+peak	28	1
+peak	12	0.045
+peak	26	0.009
+intensity	1.05
+
+non-H-molecule	Ne
+peak	20	1
+peak	22	0.099
+peak	21	0.003
+intensity	0.23
+
+non-H-molecule	Ar
+peak	40	1
+peak	20	0.107
+peak	36	0.003
+intensity	1.2
+
+non-H-molecule	N2
+peak	28	1
+peak	14	0.055
+peak	29	0.007
+intensity	1.0
+
+non-H-molecule	O2
+peak	32	1
+peak	16	0.114
+peak	34	0.008
+intensity	0.96
+
